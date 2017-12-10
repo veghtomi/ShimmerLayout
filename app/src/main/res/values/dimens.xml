@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="monogram_width">40dp</dimen>
+    <dimen name="test_case_label_margin_top">25dp</dimen>
+    <dimen name="test_case_shimmer_margin_top">15dp</dimen>
+    <dimen name="test_case_shimmer_height">70dp</dimen>
 </resources>

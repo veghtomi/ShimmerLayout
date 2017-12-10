@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.supercharge.shimmeringlayout.tests.MaskCenterColorWidthTestsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 1, centerColor = default from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 1, centerColor = default, angle = 30 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="30"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = default, centerColor = 0.3 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_gradient_center_color_width="0.3">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 1, centerColor = 1 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_gradient_center_color_width="1"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 0.7, centerColor = 0.5 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_gradient_center_color_width="0.5"
+            app:shimmer_mask_width="0.7">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 1, centerColor = default, angle = 30, height > width from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="85dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="30"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 1, centerColor = default, angle = 0, height > width from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="85dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="0"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 0.5, centerColor = 0.8 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_gradient_center_color_width="0.8"
+            app:shimmer_mask_width="0.5">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = default, centerColor = 0.0 from xml EXCEPTION" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_gradient_center_color_width="0.1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Mask = 0.0, centerColor = default from xml EXCEPTION" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_mask_width="1">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    </LinearLayout>
+
+</ScrollView>

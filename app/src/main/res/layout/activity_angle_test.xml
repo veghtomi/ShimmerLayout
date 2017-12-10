@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.supercharge.shimmeringlayout.tests.AngleTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 0 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="0"
+            app:shimmer_animation_duration="4000"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 30 from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="30"
+            app:shimmer_animation_duration="4000"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 0 from code" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/angle_test_0_from_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="4000">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 30 from code" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/angle_test_30_from_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="4000">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 31 from xml - EXCEPTION" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="4000"
+
+
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Angle 31 from code - EXCEPTION" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/angle_test_31_from_code"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="4000">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.supercharge.shimmeringlayout.tests.AutoStartTestsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Auto start = true from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Auto start = false from xml" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_auto_start="false">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Auto start = true from xml, stop immediately" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/auto_start_test_start_from_xml_stop_immediately"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Manual start, stop immediately" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/auto_start_test_manual_start_stop_immediately"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Auto start = true, visibility test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/auto_start_test_true_visibility"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/auto_start_test_visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visible" />
+
+            <Button
+                android:id="@+id/auto_start_test_invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invisible" />
+
+            <Button
+                android:id="@+id/auto_start_test_gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

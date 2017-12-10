@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.supercharge.shimmeringlayout.tests.ColorTestsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/test_case_label_margin_top"
+        android:gravity="center"
+        android:text="Color change from xml" />
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/test_case_shimmer_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+        app:shimmer_animation_duration="3000"
+        app:shimmer_auto_start="true"
+        app:shimmer_color="@color/colorAccent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/shimmer_background_color" />
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/test_case_label_margin_top"
+        android:gravity="center"
+        android:text="Color change from code" />
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/color_test_change_from_code"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/test_case_shimmer_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+        app:shimmer_animation_duration="3000">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/shimmer_background_color" />
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+
+</LinearLayout>

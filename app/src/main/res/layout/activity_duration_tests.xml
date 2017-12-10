@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.supercharge.shimmeringlayout.tests.DurationTestsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Duration change from xml - slow" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="6000"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Duration change from xml - fast" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="1000"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Duration change from code - slow" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/duration_test_change_from_code_slow"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Duration change from code - fast" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/duration_test_change_from_code_fast"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top">
+
+            <include layout="@layout/view_to_animate_on" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+    </LinearLayout>
+
+</ScrollView>

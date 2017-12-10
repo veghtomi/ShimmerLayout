@@ -18,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".tests.UiTestCasesActivity" />
+        <activity android:name=".tests.ColorTestsActivity" />
+        <activity android:name=".tests.DurationTestsActivity" />
+        <activity android:name=".tests.AngleTestActivity" />
+        <activity android:name=".tests.HeightWidthTestsActivity" />
+        <activity android:name=".tests.AutoStartTestsActivity" />
+        <activity android:name=".tests.MaskCenterColorWidthTestsActivity"/>
     </application>
 
 </manifest>
