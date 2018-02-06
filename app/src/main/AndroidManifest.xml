@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="io.supercharge.shimmeringlayout">
+    package="io.supercharge.shimmeringlayout">
 
     <application
         android:allowBackup="true"
@@ -13,9 +13,9 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".tests.UiTestCasesActivity" />
@@ -24,7 +24,8 @@
         <activity android:name=".tests.AngleTestActivity" />
         <activity android:name=".tests.HeightWidthTestsActivity" />
         <activity android:name=".tests.AutoStartTestsActivity" />
-        <activity android:name=".tests.MaskCenterColorWidthTestsActivity"/>
+        <activity android:name=".tests.MaskCenterColorWidthTestsActivity" />
+        <activity android:name=".tests.recyclerview.RecyclerViewTestActivity"/>
     </application>
 
 </manifest>

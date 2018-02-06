@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import io.supercharge.shimmeringlayout.R;
+import io.supercharge.shimmeringlayout.tests.recyclerview.RecyclerViewTestActivity;
 
 public class UiTestCasesActivity extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class UiTestCasesActivity extends AppCompatActivity {
         addNavigationToTestCases(R.id.ui_test_angle_button, AngleTestActivity.class);
         addNavigationToTestCases(R.id.ui_test_height_width_button, HeightWidthTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_mask_width_center_color_button, MaskCenterColorWidthTestsActivity.class);
+        addNavigationToTestCases(R.id.ui_test_recycler_view, RecyclerViewTestActivity.class);
     }
 
     private void addNavigationToTestCases(int buttonId, final Class<? extends AppCompatActivity> targetActivity) {
