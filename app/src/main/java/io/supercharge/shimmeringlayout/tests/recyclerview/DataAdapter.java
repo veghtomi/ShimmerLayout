@@ -24,6 +24,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ShimmerViewHol
     }
 
     @Override
+    public void onViewAttachedToWindow(ShimmerViewHolder holder) {
+        holder.shimmerLayout.startShimmerAnimation();
+    }
+
+    @Override
     public int getItemCount() {
         return 15;
     }

@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/test_case_label_margin_top"
             android:gravity="center"
-            android:text="Mask = 1, centerColor = 1 from xml" />
+            android:text="Mask = 1, centerColor = 0.99 from xml" />
 
         <io.supercharge.shimmerlayout.ShimmerLayout
             android:layout_width="wrap_content"
@@ -108,7 +108,7 @@
             app:shimmer_animation_duration="3500"
             app:shimmer_auto_start="true"
             app:shimmer_color="@color/colorAccent"
-            app:shimmer_gradient_center_color_width="1"
+            app:shimmer_gradient_center_color_width="0.99"
             app:shimmer_mask_width="1">
 
             <View
