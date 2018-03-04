@@ -389,8 +389,8 @@ public class ShimmerLayout extends FrameLayout {
     }
 
     private int calculateMaskWidth() {
-        final double shimmerLineBottomWidth = (getWidth() / 2 * maskWidth) / Math.cos(Math.toRadians(Math.abs(shimmerAngle)));
-        final double shimmerLineRemainingTopWidth = getHeight() * Math.tan(Math.toRadians(Math.abs(shimmerAngle)));
+        final double shimmerLineBottomWidth = (getWidth() / 2 * maskWidth) / Math.cos(Math.toRadians(shimmerAngle));
+        final double shimmerLineRemainingTopWidth = getHeight() * Math.tan(Math.toRadians(shimmerAngle));
 
         return (int) (shimmerLineBottomWidth + shimmerLineRemainingTopWidth);
     }
