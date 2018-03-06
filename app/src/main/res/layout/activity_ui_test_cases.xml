@@ -47,6 +47,15 @@
             android:text="Angle tests" />
 
         <Button
+            android:id="@+id/ui_test_reversed_animation_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Reversed animation tests" />
+
+        <Button
             android:id="@+id/ui_test_height_width_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

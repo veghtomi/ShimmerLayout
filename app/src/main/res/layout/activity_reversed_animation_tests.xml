@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.supercharge.shimmeringlayout.tests.MaskCenterColorWidthTestsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Reversed default value test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Reversed = false test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_reverse_animation="false">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Reversed = true test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent"
+            app:shimmer_reverse_animation="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Reversed = false from code test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/reversed_animation_test_false"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Reversed = true from code test" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:id="@+id/reversed_animation_test_true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/test_case_shimmer_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_color="@color/colorAccent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/shimmer_background_color" />
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+    </LinearLayout>
+
+</ScrollView>

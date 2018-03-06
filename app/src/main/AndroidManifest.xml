@@ -25,7 +25,8 @@
         <activity android:name=".tests.HeightWidthTestsActivity" />
         <activity android:name=".tests.AutoStartTestsActivity" />
         <activity android:name=".tests.MaskCenterColorWidthTestsActivity" />
-        <activity android:name=".tests.recyclerview.RecyclerViewTestActivity"/>
+        <activity android:name=".tests.recyclerview.RecyclerViewTestActivity" />
+        <activity android:name=".tests.ReversedAnimationTestsActivity" />
     </application>
 
 </manifest>

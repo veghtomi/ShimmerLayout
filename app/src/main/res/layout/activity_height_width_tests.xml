@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/test_case_label_margin_top"
             android:gravity="center"
-            android:text="Height > width, angle 30" />
+            android:text="Height > width, angle 45" />
 
         <io.supercharge.shimmerlayout.ShimmerLayout
             android:layout_width="85dp"
@@ -46,9 +47,54 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
-            app:shimmer_angle="30"
+            app:shimmer_angle="45"
             app:shimmer_animation_duration="3500"
             app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Height > width, angle -45" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="85dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="-45"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true">
+
+            <include layout="@layout/view_to_animate_on" />
+
+        </io.supercharge.shimmerlayout.ShimmerLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/test_case_label_margin_top"
+            android:gravity="center"
+            android:text="Height > width, reversed, angle 45" />
+
+        <io.supercharge.shimmerlayout.ShimmerLayout
+            android:layout_width="85dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/test_case_shimmer_margin_top"
+            app:shimmer_angle="45"
+            app:shimmer_animation_duration="3500"
+            app:shimmer_auto_start="true"
+            app:shimmer_reverse_animation="true">
 
             <include layout="@layout/view_to_animate_on" />
 

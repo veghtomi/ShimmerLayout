@@ -13,16 +13,28 @@ public class AngleTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_angle_test);
 
-        ShimmerLayout minimumAngleShimmerLayout = findViewById(R.id.angle_test_0_from_code);
-        minimumAngleShimmerLayout.setShimmerAngle(0);
-        minimumAngleShimmerLayout.startShimmerAnimation();
+        ShimmerLayout zeroAngleShimmerLayout = findViewById(R.id.angle_test_0_from_code);
+        zeroAngleShimmerLayout.setShimmerAngle(0);
+        zeroAngleShimmerLayout.startShimmerAnimation();
 
-        ShimmerLayout maximumAngleShimmerLayout = findViewById(R.id.angle_test_30_from_code);
-        maximumAngleShimmerLayout.setShimmerAngle(30);
+        ShimmerLayout positiveAngleShimmerLayout = findViewById(R.id.angle_test_30_from_code);
+        positiveAngleShimmerLayout.setShimmerAngle(30);
+        positiveAngleShimmerLayout.startShimmerAnimation();
+
+        ShimmerLayout maximumAngleShimmerLayout = findViewById(R.id.angle_test_45_from_code);
+        maximumAngleShimmerLayout.setShimmerAngle(45);
         maximumAngleShimmerLayout.startShimmerAnimation();
 
+        ShimmerLayout negativeAngleShimmerLayout = findViewById(R.id.angle_test_minus_30_from_code);
+        negativeAngleShimmerLayout.setShimmerAngle(-30);
+        negativeAngleShimmerLayout.startShimmerAnimation();
+
+        ShimmerLayout minimumAngleShimmerLayout = findViewById(R.id.angle_test_minus_45_from_code);
+        minimumAngleShimmerLayout.setShimmerAngle(-45);
+        minimumAngleShimmerLayout.startShimmerAnimation();
+
         ShimmerLayout invalidAngleShimmerLayout = findViewById(R.id.angle_test_31_from_code);
-//        invalidAngleShimmerLayout.setShimmerAngle(31);
+//        invalidAngleShimmerLayout.setShimmerAngle(-46);
         invalidAngleShimmerLayout.startShimmerAnimation();
     }
 }

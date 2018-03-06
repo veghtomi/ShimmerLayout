@@ -20,6 +20,7 @@ public class UiTestCasesActivity extends AppCompatActivity {
         addNavigationToTestCases(R.id.ui_test_color_button, ColorTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_duration_button, DurationTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_angle_button, AngleTestActivity.class);
+        addNavigationToTestCases(R.id.ui_test_reversed_animation_button, ReversedAnimationTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_height_width_button, HeightWidthTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_mask_width_center_color_button, MaskCenterColorWidthTestsActivity.class);
         addNavigationToTestCases(R.id.ui_test_recycler_view, RecyclerViewTestActivity.class);
